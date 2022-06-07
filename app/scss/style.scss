@@ -1,0 +1,204 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+@import 'libs';
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+
+
+    // height: 100%;
+    margin-top: 70px;
+
+    &__btn {
+        display: none;
+    }
+
+    &__items {
+        gap: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__link {
+
+        font-size: 16px;
+        // line-height: 400px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: #ffffff;
+        outline-color: #000000;
+        outline-offset: 5px;
+
+        &:focus {
+            color: $focus;
+        }
+
+        &:hover {
+            color: $ac;
+        }
+
+        &:active {
+            color: $active;
+        }
+
+        &--active {
+            color: $black;
+        }
+    }
+}
+
+
+
+.intro {
+    background-image: url('../images/sunset_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    // width: 100%;
+    height: 100vh;
+    // z-index: 1;
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    }
+
+    &__box {
+        margin: auto;
+    }
+
+    &__title {
+        font-size: 36px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    &__link {
+        font-size: 12px;
+        text-transform: uppercase;
+        background-color: $green;
+        padding: 21px 31px;
+        border-radius: 5px;
+        display: flex;
+        margin: 0 auto;
+        max-width: 175px;
+        transition: color 0.5s;
+
+        &:focus {
+            color: $focus;
+        }
+
+        &:hover {
+            background-color: red;
+        }
+
+        &:active {
+            color: $active;
+        }
+    }
+}
+
+.social {
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+
+    &__link {}
+}
+
+
+/*медия всегда должны быть в низу */
+
+
+/*
+
+&__link {
+    color: $title;
+    font-family: $;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 700;
+    outline-color: #000000;
+    outline-offset: 5px;
+    transition: color 0.5s;
+    &:focus {
+        color: $green;
+    }
+
+    &:hover {
+        color: $ac;
+    }
+
+    &--active {
+        color: $ac;
+    }
+}
+
+*/
+
+/*.video {
+    height: 425px;
+    max-width: 1185px;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    position: relative;
+    opacity: 1;
+    transition: opacity 0.7s,
+        border 0.5s;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    &:focus {
+        outline: solid $ac;
+    }
+
+    &:hover {
+        opacity: 0.4;
+        border: 2px solid $black;
+    }
+
+    &:active {
+        color: $active;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url('../images/play.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100px;
+        width: 100px;
+    }
+}*/
+
+@import 'media';
